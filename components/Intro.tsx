@@ -60,7 +60,7 @@ const Intro = () => {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-2 px-4 text-lg font-medium items-center justify-center"
+          className="flex flex-col sm:flex-row gap-3 px-4 text-lg font-medium items-center justify-center"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -69,27 +69,30 @@ const Intro = () => {
         >
           <Link
             href="#contact"
-            className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full"
+            className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition group"
           >
-            Contact me here <BsArrowRight />
+            Contact me here{" "}
+            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
           <a
-            href=""
-            className="bg-white gap-2 flex items-center px-7 py-3 rounded-full"
+            href="/CV.pdf"
+            download
+            className="bg-white gap-2 flex items-center px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition group border border-black/10"
           >
-            Download CV <HiDownload />
+            Download CV{" "}
+            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
           </a>
           <a
             href="https://www.linkedin.com/in/prince-sunsara-6202201b1/"
             target="_blank"
-            className="bg-white text-gray-700 flex gap-2 items-center p-4 rounded-full"
+            className="bg-white text-gray-700 flex gap-2 items-center p-4 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group border border-black/10"
           >
             <BsLinkedin />
           </a>
           <a
             href="https://www.github.com/prince-sunsara/"
             target="_blank"
-            className="bg-white text-gray-700 flex items-center p-4 rounded-full text-[1.35rem]"
+            className="bg-white text-gray-700 flex items-center p-4 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group border border-black/10"
           >
             <FaGithubSquare />
           </a>
