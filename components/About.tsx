@@ -6,19 +6,6 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 const About = () => {
-  // const { ref, inView } = useInView({
-  //   threshold: 0.75,
-  // });
-  // // console.log(inView); // for debug => return true/false as per browser view
-
-  // const { setActiveSection, timeOfLastClick } = useActiveSection();
-
-  // useEffect(() => {
-  //   if (inView && Date.now() - timeOfLastClick > 1000) {
-  //     setActiveSection("About");
-  //   }
-  // }, [inView, setActiveSection, timeOfLastClick]);
-
   const { ref } = useSectionInView("About");
 
   return (
