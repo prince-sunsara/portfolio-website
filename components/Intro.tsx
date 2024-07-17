@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Image from "next/image";
 import React from "react";
@@ -10,7 +11,10 @@ import { FaGithubSquare } from "react-icons/fa";
 const Intro = () => {
   return (
     <>
-      <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+      <section
+        id="home"
+        className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28"
+      >
         <div className="flex items-center justify-center">
           <div className="relative">
             <motion.div
