@@ -22,9 +22,10 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
+  let data;
   try {
-    const { data, error } = await resend.emails.send({
-      from: "Portfolio Contact Form <onboarding@resend.com>",
+    data = await resend.emails.send({
+      from: "Portfolio Contact Form <onboarding@resend.dev>",
       to: "princesunasara977@gmail.com",
       subject: "Message from Portfolio",
       reply_to: sender as string,
@@ -33,14 +34,13 @@ export const sendEmail = async (formData: FormData) => {
         sender: sender as string,
       }),
     });
-
-    return {
-      data,
-      error: getErrorMessage(error),
-    };
   } catch (error: unknown) {
     return {
       error: getErrorMessage(error),
     };
   }
+
+  return {
+    data,
+  };
 };
