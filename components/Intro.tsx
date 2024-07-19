@@ -91,7 +91,7 @@ const Intro = () => {
           <a
             href="/CV.pdf"
             download
-            className="bg-white gap-2 flex items-center px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition group border border-black/10"
+            className="bg-white  gap-2 flex items-center px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition group border border-black/10 darkText"
           >
             Download CV{" "}
             <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -99,16 +99,16 @@ const Intro = () => {
           <a
             href="https://www.linkedin.com/in/prince-sunsara-6202201b1/"
             target="_blank"
-            className="bg-white text-gray-700 flex gap-2 items-center p-4 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group border border-black/10"
+            className="bg-white text-gray-700 flex items-center p-4 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group border border-black/10 darkText dark:text-white/60"
           >
             <BsLinkedin />
           </a>
           <a
             href="https://www.github.com/prince-sunsara/"
             target="_blank"
-            className="bg-white text-gray-700 flex items-center p-4 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group border border-black/10"
+            className="bg-white text-gray-700 flex items-center p-[0.875rem] rounded-full  outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group border border-black/10 darkText dark:text-white/60"
           >
-            <FaGithubSquare />
+            <FaGithubSquare className="text-[1.4rem]" />
           </a>
         </motion.div>
       </section>

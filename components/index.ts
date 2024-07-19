@@ -6,6 +6,8 @@ import Project from "./Projects";
 import Skills from "./Skills";
 import Experiences from "./Experiences";
 import Contact from "./Contact";
+import Footer from "./Footer";
+import ThemeSwitch from "./theme-switch";
 
 export {
   Header,
@@ -16,4 +18,6 @@ export {
   Skills,
   Experiences,
   Contact,
+  Footer,
+  ThemeSwitch,
 };

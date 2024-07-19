@@ -10,3 +10,7 @@ html {
 .borderBlack {
     @apply border border-black/10;
 }
+
+.darkText {
+    @apply dark:bg-white/10;
+}
