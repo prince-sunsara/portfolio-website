@@ -15,7 +15,7 @@ Technologies used to create it:
 
 Extra packages for make it better:
 
-```
+```bash
 >> react hot toast
 >> react icons
 >> react intersection observer
