@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <motion.section
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] text-justify sm:text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -18,7 +18,7 @@ const About = () => {
       ref={ref}
     >
       <SectionHeading>About me</SectionHeading>
-      <p>
+      <p className="">
         Hello, my name is <span className="font-semibold">Prince Sunsara</span>.
         I’m from <span className="font-semibold">Manund, Patan, Gujarat</span>,
         where I completed my <span className="font-bold">SSC</span> with
