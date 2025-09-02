@@ -2,9 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import psMovies from "@/public/ps-movies.png";
+import psMovies from "@/public/psMovies.jpg";
 import textUtils from "@/public/text-utils.png";
 import dailyJournal from "@/public/daily-journal.png";
+import gamingFusionHub from "@/public/gamingFusionHub.jpg";
+import psychoScript from "@/public/psychoScript.jpg";
 
 export const links = [
   {
@@ -54,25 +56,39 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Gaming Fusion Hub",
+    description:
+      "A modern gaming platform built with React and Tailwind. Features classic browser mini-games, engaging blogs, and a responsive, SEO-friendly design for all devices.",
+    tags: ["React", "Tailwind", "Vite", "Canvas"],
+    imageUrl: gamingFusionHub,
+    link: "https://gaming-fusion-hub.vercel.app/",
+  },
+
+  {
     title: "Ps Movies",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "A full-stack project where users can give public feedback to companies. Built with React and Tailwind, focused on usability, scalability, and clean UI.",
     tags: ["React", "Tailwind"],
     imageUrl: psMovies,
+    link: "https://ps-movies.vercel.app/",
   },
-  {
-    title: "Text Utils",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React"],
-    imageUrl: textUtils,
-  },
+
   {
     title: "Daily Journal Blog",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A blogging web app built with MERN stack. Includes word and character count, analytics, and social post limits for writers and content creators.",
     tags: ["React Js", "Node js", "Express Js", "Mongo DB"],
     imageUrl: dailyJournal,
+    link: "https://github.com/prince-sunsara/Daily-Journal-Blog-Website-with-mongo",
+  },
+
+  {
+    title: "PsychoScript",
+    description:
+      "A creative text styling app with 50+ fonts and effects. Customize text using gradients, animations, and export styled results instantly for free.",
+    tags: ["React", "Next.js", "Tailwind", "Text Effects"],
+    imageUrl: psychoScript,
+    link: "https://psycho-script.vercel.app/",
   },
 ] as const;
 
@@ -82,12 +98,13 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
-  "Next.js",
-  "Node.js",
+  "NextJS",
+  "NodeJS",
   "Git",
-  "Tailwind",
+  "Tailwind CSS",
   "MongoDB",
   "Express",
   "MySQL",
   "Python",
+  "AI",
 ] as const;

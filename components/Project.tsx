@@ -5,10 +5,17 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type ProjectPropsType = (typeof projectsData)[number];
 
-function Project({ title, description, tags, imageUrl }: ProjectPropsType) {
+function Project({
+  title,
+  description,
+  tags,
+  imageUrl,
+  link,
+}: ProjectPropsType) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -25,7 +32,7 @@ function Project({ title, description, tags, imageUrl }: ProjectPropsType) {
       ref={ref}
       className="group mb-3 sm:mb-8"
     >
-      <section className=" bg-gray-100 max-w-[42rem] max-h-[25rem] sm:h-[20rem]  border rounded-lg border-black/5 overflow-hidden sm:pr-8 sm:relative  hover:bg-gray-200 transition cursor-pointer dark:bg-white/10 dark:hover:bg-white/30 dark:text-white">
+      <section className=" bg-gray-100 max-w-[42rem] max-h-[30rem] sm:h-[25rem] border rounded-lg border-black/5 overflow-hidden sm:pr-8 sm:relative  hover:bg-gray-200 transition cursor-pointer dark:bg-white/10 dark:hover:bg-white/30 dark:text-white">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col sm:mt-auto h-full group-even:ml-auto">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
@@ -41,6 +48,14 @@ function Project({ title, description, tags, imageUrl }: ProjectPropsType) {
               </li>
             ))}
           </ul>
+          <Link
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition"
+          >
+            Live Demo 🚀
+          </Link>
         </div>
 
         <Image
